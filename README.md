@@ -25,3 +25,22 @@ Prediction results of CMPNN, its variants and baselines on six chemical graph da
 ## Requirements
 
 
+## Citation:
+
+Please cite the following paper if you use this code in your work.
+```bibtex
+@inproceedings{ijcai2020-392,
+  title     = {Communicative Representation Learning on Attributed Molecular Graphs},
+  author    = {Song, Ying and Zheng, Shuangjia and Niu, Zhangming and Fu, Zhang-hua and Lu, Yutong and Yang, Yuedong},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  editor    = {Christian Bessiere}	
+  pages     = {2831--2838},
+  year      = {2020},
+  month     = {7},
+  note      = {Main track}
+  doi       = {10.24963/ijcai.2020/392},
+  url       = {https://doi.org/10.24963/ijcai.2020/392},
+}
+```
