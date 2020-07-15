@@ -18,7 +18,7 @@ Overview
 |N-Gram | 0.890 | 0.842 |   -   | 0.870 | 0.718 | 1.371 |
 |MPNN   | 0.910 &plusmn; 0.032 | 0.844 &plusmn; 0.014 | 0.641 &plusmn; 0.014 | 0.881 &plusmn; 0.037 | 0.702 &plusmn; 0.042 | 1.242 &plusmn; 0.249 |
 |DMPNN  | 0.917 &plusmn; 0.037 | 0.854 &plusmn; 0.012 | 0.658 &plusmn; 0.020 | 0.897 &plusmn; 0.042 | 0.587 &plusmn; 0.060 | 1.009 &plusmn; 0.207 |
-|**CMPNN**  | **0.963 &plusmn; 0.003** | **0.856 &plusmn; 0.007** | **0.666 &plusmn; 0.007** | **0.933 &plusmn; 0.012** | **0.233 &plusmn; 0.015** | **0.819 &plusmn; 0.147** |
+|**CMPNN (our)**  | **0.963 &plusmn; 0.003** | **0.856 &plusmn; 0.007** | **0.666 &plusmn; 0.007** | **0.933 &plusmn; 0.012** | **0.233 &plusmn; 0.015** | **0.819 &plusmn; 0.147** |
 
 Requirements
 =============
