@@ -8,6 +8,9 @@ The code is built based on DMPNN (https://github.com/chemprop/chemprop). Thanks 
 
 Overview
 =============
+
+Prediction results of CMPNN, its variants and baselines on six chemical graph datasets. We used a 5-fold cross validation with random split and replicated experiments on each tasks for five times, and reported the mean and standard deviation of AUC or RMSE values. For scaffold-split results, please refer to **supplementary file**
+
 |Dataset  | BBBP | Tox21 | Sider | ClinTox | ESOL | FreeSolv |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |RF     | 0.788 | 0.619 | 0.572 | 0.544 | 1.176 | 2.048 |
