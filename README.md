@@ -1,6 +1,6 @@
 # CMPNN
 
-(It will be uploaded in the next few days)
+**(It will be uploaded in the next few days)**
 
 The code for our IJCAI paper: Communicative Representation Learning on Attributed Molecular Graphs
 
