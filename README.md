@@ -27,6 +27,8 @@ Prediction results of CMPNN, its variants and baselines on six chemical graph da
 
 ## Requirements
 
++ cuda >= 8.0
++ cuDNN
 
 ## Citation:
 
