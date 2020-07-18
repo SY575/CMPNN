@@ -30,6 +30,10 @@ Prediction results of CMPNN, its variants and baselines on six chemical graph da
 + cuda >= 8.0
 + cuDNN
 
+## Training
+
+`python train_demo.py` 
+
 ## Citation:
 
 Please cite the following paper if you use this code in your work.
