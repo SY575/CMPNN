@@ -1,5 +1,7 @@
 # CMPNN
 
+(It will be uploaded in the next few days)
+
 The code for our IJCAI paper: Communicative Representation Learning on Attributed Molecular Graphs
 
 https://www.ijcai.org/Proceedings/2020/0392.pdf
