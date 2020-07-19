@@ -4,8 +4,6 @@
 
 Source code for our IJCAI 2020 paper [Communicative Representation Learning on Attributed Molecular Graphs](https://www.ijcai.org/Proceedings/2020/0392.pdf)
 
-https://www.ijcai.org/Proceedings/2020/0392.pdf
-
 The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks a lot for their code sharing!
 
 
@@ -13,7 +11,6 @@ The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks
 
 ## Overview
 
-Prediction results of CMPNN, its variants and baselines on six chemical graph datasets. We used a 5-fold cross validation with random split and replicated experiments on each tasks for five times, and reported the mean and standard deviation of AUC or RMSE values. For methodology and scaffold-split results, please refer to paper for more details.
 
 |Dataset  | BBBP | Tox21 | Sider | ClinTox | ESOL | FreeSolv |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -27,6 +24,9 @@ Prediction results of CMPNN, its variants and baselines on six chemical graph da
 |DMPNN w/o FP  | 0.913&plusmn;0.026 | 0.845&plusmn;0.015 | 0.646&plusmn;0.016 | 0.894&plusmn;0.027 | 0.665&plusmn;0.052 | 1.157&plusmn;0.105 |
 |DMPNN with FP  | 0.917&plusmn;0.037 | 0.854&plusmn;0.012 | 0.658&plusmn;0.020 | 0.897&plusmn;0.042 | 0.587&plusmn;0.060 | 1.009&plusmn;0.207 |
 |**CMPNN w/o FP (our)**  | **0.963&plusmn;0.003** | **0.856&plusmn;0.007** | **0.666&plusmn;0.007** | **0.933&plusmn;0.012** | **0.233&plusmn;0.015** | **0.819&plusmn;0.147** |
+
+*Prediction results of CMPNN, its variants and baselines on six chemical graph datasets. We used a 5-fold cross validation with random split and replicated experiments on each tasks for five times, and reported the mean and standard deviation of AUC or RMSE values. For methodology and scaffold-split results, please refer to paper for more details.*
+
 
 ## Dependencies
 
