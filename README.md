@@ -39,22 +39,15 @@ The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks
 Tips: Using code `conda install -c rdkit rdkit` can help you install package RDKit quickly.
 ## Training
 
+To run the demo code on dataset BBBP, run:
+
 `python train_demo.py` 
 
 To train a model, run:
 
-## Reproducing results
-To reproduce the results published in the paper:
+`python train.py --data_path <path> --dataset_type <type> --num_folds 5 --gpu 0 --epochs 30`
 
-Step 1. Hyperparameter Optimization
-
-run `python hp.py` and obtain the best hyperparameters
-
-Step 2. Run the training code above
-
-Note that we used a 5-fold cross validation withrandom split and r replicated experiments on each tasks for five times.
-
-
+where <path> is the path to a CSV file containing a dataset, <type> is either "classification" or "regression" depending on the type of the dataset.
 
 ## Citation:
 
