@@ -47,7 +47,7 @@ To train a model, run:
 
 `python train.py --data_path <path> --dataset_type <type> --num_folds 5 --gpu 0 --epochs 30`
 
-where <path> is the path to a CSV file containing a dataset, <type> is either "classification" or "regression" depending on the type of the dataset.
+where `<path>` is the path to a CSV file containing a dataset, `<type>` is either "classification" or "regression" depending on the type of the dataset.
 
 ## Citation:
 
