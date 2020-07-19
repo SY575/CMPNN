@@ -39,6 +39,19 @@ The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks
 
 `python train_demo.py` 
 
+To train a model, run:
+
+## Reproducing results
+To reproduce the results published in the paper:
+
+Step 1. Hyperparameter Optimization
+
+run `python hp.py` and obtain the best hyperparameters
+
+Step 2. Run the training code above
+
+
+
 ## Citation:
 
 Please cite the following paper if you use this code in your work.
