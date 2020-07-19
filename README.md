@@ -36,6 +36,7 @@ The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks
 + RDKit
 + torch >= 1.2.0
 
+Tips: Using code `conda install -c rdkit rdkit` can help you install package RDKit quickly.
 ## Training
 
 `python train_demo.py` 
