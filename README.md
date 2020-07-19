@@ -50,6 +50,8 @@ run `python hp.py` and obtain the best hyperparameters
 
 Step 2. Run the training code above
 
+Note that we used a 5-fold cross validation withrandom split and r replicated experiments on each tasks for five times.
+
 
 
 ## Citation:
