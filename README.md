@@ -14,6 +14,7 @@ The code was built based on DMPNN (https://github.com/chemprop/chemprop). Thanks
 
 |Dataset  | BBBP | Tox21 | Sider | ClinTox | ESOL | FreeSolv |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|Task|Classification|Classification|Classification|Classification|Regression|Regression|
 |RF     | 0.788 | 0.619 | 0.572 | 0.544 | 1.176 | 2.048 |
 |FNN    | 0.899 | 0.788 | 0.652 | 0.688 | 2.152 | 3.043 |
 |GCN    | 0.690 | 0.829 | 0.638 | 0.807 | 0.970 | 1.400 |
