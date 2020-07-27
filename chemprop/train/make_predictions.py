@@ -75,57 +75,59 @@ def make_predictions(args: Namespace, smiles: List[str] = None) -> List[Optional
     # Ensemble predictions
     avg_preds = sum_preds / len(args.checkpoint_paths)
     avg_preds = avg_preds.tolist()
-
-    # Save predictions
-    assert len(test_data) == len(avg_preds)
-    print(f'Saving predictions to {args.preds_path}')
-
-    # Put Nones for invalid smiles
-    full_preds = [None] * len(full_data)
-    for i, si in enumerate(valid_indices):
-        full_preds[si] = avg_preds[i]
-    avg_preds = full_preds
-    test_smiles = full_data.smiles()
-
-    # Write predictions
-    with open(args.preds_path, 'w') as f:
-        writer = csv.writer(f)
-
-        header = []
-
-        if args.use_compound_names:
-            header.append('compound_names')
-
-        header.append('smiles')
-
-        if args.dataset_type == 'multiclass':
-            for name in args.task_names:
-                for i in range(args.multiclass_num_classes):
-                    header.append(name + '_class' + str(i))
-        else:
-            header.extend(args.task_names)
-        writer.writerow(header)
-
-        for i in range(len(avg_preds)):
-            row = []
-
-            if args.use_compound_names:
-                row.append(compound_names[i])
-
-            row.append(test_smiles[i])
-
-            if avg_preds[i] is not None:
-                if args.dataset_type == 'multiclass':
-                    for task_probs in avg_preds[i]:
-                        row.extend(task_probs)
-                else:
-                    row.extend(avg_preds[i])
-            else:
-                if args.dataset_type == 'multiclass':
-                    row.extend([''] * args.num_tasks * args.multiclass_num_classes)
-                else:
-                    row.extend([''] * args.num_tasks)
-
-            writer.writerow(row)
-
-    return avg_preds
+    return avg_preds, test_data.smiles()
+# =============================================================================
+#     # Save predictions
+#     assert len(test_data) == len(avg_preds)
+#     print(f'Saving predictions to {args.preds_path}')
+# 
+#     # Put Nones for invalid smiles
+#     full_preds = [None] * len(full_data)
+#     for i, si in enumerate(valid_indices):
+#         full_preds[si] = avg_preds[i]
+#     avg_preds = full_preds
+#     test_smiles = full_data.smiles()
+# 
+#     # Write predictions
+#     with open(args.preds_path, 'w') as f:
+#         writer = csv.writer(f)
+# 
+#         header = []
+# 
+#         if args.use_compound_names:
+#             header.append('compound_names')
+# 
+#         header.append('smiles')
+# 
+#         if args.dataset_type == 'multiclass':
+#             for name in args.task_names:
+#                 for i in range(args.multiclass_num_classes):
+#                     header.append(name + '_class' + str(i))
+#         else:
+#             header.extend(args.task_names)
+#         writer.writerow(header)
+# 
+#         for i in range(len(avg_preds)):
+#             row = []
+# 
+#             if args.use_compound_names:
+#                 row.append(compound_names[i])
+# 
+#             row.append(test_smiles[i])
+# 
+#             if avg_preds[i] is not None:
+#                 if args.dataset_type == 'multiclass':
+#                     for task_probs in avg_preds[i]:
+#                         row.extend(task_probs)
+#                 else:
+#                     row.extend(avg_preds[i])
+#             else:
+#                 if args.dataset_type == 'multiclass':
+#                     row.extend([''] * args.num_tasks * args.multiclass_num_classes)
+#                 else:
+#                     row.extend([''] * args.num_tasks)
+# 
+#             writer.writerow(row)
+# 
+#     return avg_preds
+# =============================================================================
