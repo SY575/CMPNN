@@ -49,6 +49,12 @@ To train a model, run:
 
 where `<path>` is the path to a CSV file containing a dataset, `<type>` is either "classification" or "regression" depending on the type of the dataset.
 
+## Predicting
+
+`python predict.py --data_path <path> --checkpoint_dir <dir>`
+
+where `<dir>` is the directory where the model checkpoint(s) are saved, and `<path>` is the path of SMILES dataset
+
 ## Citation:
 
 Please cite the following paper if you use this code in your work.
